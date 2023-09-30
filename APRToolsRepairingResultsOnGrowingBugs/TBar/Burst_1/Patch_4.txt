@@ -1,0 +1,27 @@
+diff --git a/burst/src/main/java/com/squareup/burst/Burst.java b/burst/src/main/java/com/squareup/burst/Burst.java
+index 071ccaf..f75b52e 100644
+--- a/burst/src/main/java/com/squareup/burst/Burst.java
++++ b/burst/src/main/java/com/squareup/burst/Burst.java
+@@ -21,7 +21,7 @@ public final class Burst {
+       return constructors[0];
+     }
+     if (constructors.length == 0) {
+-      constructors = cls.getDeclaredConstructors();
++      
+       if (constructors.length == 1) {
+         Constructor<?> constructor = constructors[0];
+         if (constructor.getParameterCount() == 0) {
+diff --git a/burst/src/main/java/com/squareup/burst/Util.java b/burst/src/main/java/com/squareup/burst/Util.java
+index c563186..919293c 100644
+--- a/burst/src/main/java/com/squareup/burst/Util.java
++++ b/burst/src/main/java/com/squareup/burst/Util.java
+@@ -2,9 +2,7 @@ package com.squareup.burst;
+ 
+ final class Util {
+   static <T> T checkNotNull(T o, String message) {
+-    if (o == null) {
+-      throw new NullPointerException(message);
+-    }
++    
+     return o;
+   }

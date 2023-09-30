@@ -1,0 +1,13 @@
+diff --git a/src/main/java/mikera/matrixx/impl/PermutationMatrix.java b/src/main/java/mikera/matrixx/impl/PermutationMatrix.java
+index 4b9d05b..254eb5a 100644
+--- a/src/main/java/mikera/matrixx/impl/PermutationMatrix.java
++++ b/src/main/java/mikera/matrixx/impl/PermutationMatrix.java
+@@ -42,7 +42,7 @@ public final class PermutationMatrix extends ABooleanMatrix implements IFastRows
+ 	}
+ 	
+ 	public static PermutationMatrix create(Index rowPermutations) {
+-		return new PermutationMatrix(rowPermutations.clone());
++		return new PermutationMatrix(rowPermutations.invert());
+ 	}
+ 	
+ 	public static PermutationMatrix wrap(Index rowPermutations) {

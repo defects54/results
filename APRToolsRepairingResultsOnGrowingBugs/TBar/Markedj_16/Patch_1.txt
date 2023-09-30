@@ -1,0 +1,13 @@
+diff --git a/src/main/java/io/github/gitbucket/markedj/Renderer.java b/src/main/java/io/github/gitbucket/markedj/Renderer.java
+index ac2e722..d2f2334 100644
+--- a/src/main/java/io/github/gitbucket/markedj/Renderer.java
++++ b/src/main/java/io/github/gitbucket/markedj/Renderer.java
+@@ -90,7 +90,7 @@ public class Renderer {
+         }
+ 
+         if(content.length() == 0){
+-            content = "&nbsp;";
++            
+         }
+         String align = flags.getAlign();
+         if(align != null){

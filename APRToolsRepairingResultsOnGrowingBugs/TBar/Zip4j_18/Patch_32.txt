@@ -1,0 +1,15 @@
+diff --git a/src/main/java/net/lingala/zip4j/ZipFile.java b/src/main/java/net/lingala/zip4j/ZipFile.java
+old mode 100755
+new mode 100644
+index ea2e5e4..28454b8
+--- a/src/main/java/net/lingala/zip4j/ZipFile.java
++++ b/src/main/java/net/lingala/zip4j/ZipFile.java
+@@ -1079,7 +1079,7 @@ public class ZipFile implements Closeable {
+    */
+   @Override
+   public void close() throws IOException {
+-    if (zipFileClosed) {
++    if (this.isEncrypted) {
+       return;
+     }
+     for (InputStream inputStream : openInputStreams) {

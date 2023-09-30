@@ -1,0 +1,4 @@
+Pdfbox_fontbox5-99-buggy/fontbox/src/main/java/org/apache/fontbox/ttf/RAFDataStream.java
+-            raf.close();
++if((raf != null)){
+

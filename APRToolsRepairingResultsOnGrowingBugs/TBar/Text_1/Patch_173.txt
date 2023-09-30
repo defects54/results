@@ -1,0 +1,14 @@
+diff --git a/src/main/java/org/apache/commons/text/similarity/JaroWinklerDistance.java b/src/main/java/org/apache/commons/text/similarity/JaroWinklerDistance.java
+index 0190c7b..25807fb 100644
+--- a/src/main/java/org/apache/commons/text/similarity/JaroWinklerDistance.java
++++ b/src/main/java/org/apache/commons/text/similarity/JaroWinklerDistance.java
+@@ -88,7 +88,8 @@ public class JaroWinklerDistance implements SimilarityScore<Double> {
+         }
+         double j = ((m / left.length() + m / right.length() + (m - mtp[1]) / m)) / 3;
+         double jw = j < 0.7D ? j : j + Math.min(defaultScalingFactor, 1D / mtp[3]) * mtp[2] * (1D - j);
+-        return Math.round(jw * percentageRoundValue) / percentageRoundValue;
++        return jw;
++
+     }
+ 
+     /**

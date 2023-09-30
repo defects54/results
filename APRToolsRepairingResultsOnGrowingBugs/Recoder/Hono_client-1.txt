@@ -1,0 +1,4 @@
+Hono_client1-300-buggy/client/src/main/java/org/eclipse/hono/client/impl/HonoClientImpl.java
+-                resultHandler.handle(Future.failedFuture("connection to server lost"));
++senderCreationLocks.remove(key);
+

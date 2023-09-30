@@ -1,0 +1,4 @@
+Farm2-73-buggy/src/main/java/com/zerocracy/qa/Question.java
+-            if (mtr.matches()) {
++if(((found == null) && mtr.matches())){
+

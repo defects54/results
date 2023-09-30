@@ -1,0 +1,4 @@
+Deltaspike_api5-1019-buggy/deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java
+-            StringBuilder currentValue = new StringBuilder();
++if((valueStr == null)){
+return (T)list;}

@@ -1,0 +1,4 @@
+AaltoXml2-963-buggy/src/main/java/com/fasterxml/aalto/out/ByteXmlWriter.java
+-                        break;
++writeAsEntity(ch);
+

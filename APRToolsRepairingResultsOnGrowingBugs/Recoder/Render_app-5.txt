@@ -1,0 +1,4 @@
+Render_app5-24-bugg1/render-app/src/main/java/org/janelia/alignment/transform/ExponentialFunctionOffsetTransform.java
+-        location[dimension] += a * Math.exp(-b * location[dimension]) + c;
++location[dimension] += ((a * Math.exp((b * location[dimension]))) + c);
+

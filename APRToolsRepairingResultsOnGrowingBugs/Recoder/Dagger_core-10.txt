@@ -1,0 +1,4 @@
+Dagger_core10-54-buggy/core/src/main/java/dagger/internal/FailoverLoader.java
+-          if (!type.isInterface()) {
++if(type.isInterface()){
+

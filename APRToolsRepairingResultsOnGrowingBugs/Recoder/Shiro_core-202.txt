@@ -1,0 +1,4 @@
+Shiro_core202-67-buggy/core/src/main/java/org/apache/shiro/authc/pam/FirstSuccessfulStrategy.java
+-        if (getStopAfterFirstSuccess() && aggregate != null && isEmpty(aggregate.getPrincipals())) {
++if(((getStopAfterFirstSuccess() && (aggregate != null)) && !isEmpty(aggregate.getPrincipals()))){
+

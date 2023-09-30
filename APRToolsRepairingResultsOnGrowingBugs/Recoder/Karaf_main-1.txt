@@ -1,0 +1,4 @@
+Karaf_main1-917-buggy/main/src/main/java/org/apache/karaf/main/Main.java
+-            for (File f : libs) {
++if((libs != null)){
+

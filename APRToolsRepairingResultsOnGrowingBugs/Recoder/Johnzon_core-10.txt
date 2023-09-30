@@ -1,0 +1,4 @@
+Johnzon_core10-263-buggy/johnzon-core/src/main/java/org/apache/johnzon/core/JsonGeneratorImpl.java
+-                    write(number.longValueExact());
++write(number.bigDecimalValue());
+

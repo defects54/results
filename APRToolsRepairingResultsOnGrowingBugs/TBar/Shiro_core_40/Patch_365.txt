@@ -1,0 +1,13 @@
+diff --git a/core/src/main/java/org/apache/shiro/authz/ModularRealmAuthorizer.java b/core/src/main/java/org/apache/shiro/authz/ModularRealmAuthorizer.java
+index 3c8fc13..38c68a3 100644
+--- a/core/src/main/java/org/apache/shiro/authz/ModularRealmAuthorizer.java
++++ b/core/src/main/java/org/apache/shiro/authz/ModularRealmAuthorizer.java
+@@ -87,7 +87,8 @@ public class ModularRealmAuthorizer implements Authorizer, PermissionResolverAwa
+      * @param realms the realms wrapped by this <code>Authorizer</code> which are consulted during an authorization check.
+      */
+     public void setRealms(Collection<Realm> realms) {
+-        this.realms = realms;
++        applyRolePermissionResolverToRealms();
++	this.realms = realms;
+         applyPermissionResolverToRealms();
+     }

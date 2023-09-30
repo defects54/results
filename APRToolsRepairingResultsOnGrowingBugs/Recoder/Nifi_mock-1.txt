@@ -1,0 +1,3 @@
+Nifi_mock1-402-buggy/nifi-mock/src/main/java/org/apache/nifi/util/MockProcessContext.java
+-            return encrypted.substring(4, encrypted.length() - 2);
++return encrypted.substring(4, (encrypted.length() - 1));

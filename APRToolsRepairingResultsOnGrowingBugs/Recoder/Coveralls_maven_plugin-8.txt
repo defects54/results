@@ -1,0 +1,4 @@
+Coveralls_maven_plugin8-58-buggy/src/main/java/org/eluder/coveralls/maven/plugin/Environment.java
+-        setupSourceDirectories();
++verify();
+

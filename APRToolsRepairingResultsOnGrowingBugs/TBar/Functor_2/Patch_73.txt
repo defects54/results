@@ -1,0 +1,16 @@
+diff --git a/src/main/java/org/apache/commons/functor/core/composite/UnarySequence.java b/src/main/java/org/apache/commons/functor/core/composite/UnarySequence.java
+index 0e30122..1cda6ff 100644
+--- a/src/main/java/org/apache/commons/functor/core/composite/UnarySequence.java
++++ b/src/main/java/org/apache/commons/functor/core/composite/UnarySequence.java
+@@ -71,7 +71,10 @@ public class UnarySequence<A> implements UnaryProcedure<A>, Serializable {
+         this();
+         if (procedures != null) {
+             for (UnaryProcedure<? super A> p : procedures) {
+-                then(p);
++                if (p != null) {
++	then(p);
++	}
++
+             }
+         }
+     }

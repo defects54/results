@@ -1,0 +1,13 @@
+diff --git a/src/java/org/apache/commons/io/input/SwappedDataInputStream.java b/src/java/org/apache/commons/io/input/SwappedDataInputStream.java
+index 02a540b..fa301b9 100644
+--- a/src/java/org/apache/commons/io/input/SwappedDataInputStream.java
++++ b/src/java/org/apache/commons/io/input/SwappedDataInputStream.java
+@@ -56,7 +56,7 @@ public class SwappedDataInputStream extends ProxyInputStream
+     public boolean readBoolean()
+         throws IOException, EOFException
+     {
+-        return ( 0 == readByte() );
++        return ( 0!=readByte() );
+     }
+ 
+     /**

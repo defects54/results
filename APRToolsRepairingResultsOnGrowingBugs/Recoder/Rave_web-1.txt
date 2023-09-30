@@ -1,0 +1,4 @@
+Rave_web1-59-buggy/rave-components/rave-web/src/main/java/org/apache/rave/portal/web/model/PortalPreferenceForm.java
+-        	preferenceMap.put(DEFAULT_INITIAL_WIDGET_STATUS, new PortalPreferenceImpl(INITIAL_WIDGET_STATUS, DEFAULT_INITIAL_WIDGET_STATUS));
++preferenceMap.put(INITIAL_WIDGET_STATUS, new PortalPreferenceImpl(INITIAL_WIDGET_STATUS, DEFAULT_INITIAL_WIDGET_STATUS));
+

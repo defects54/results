@@ -1,0 +1,4 @@
+JacksonDataformatsText_yaml1-263-buggy/yaml/src/main/java/com/fasterxml/jackson/dataformat/yaml/YAMLGenerator.java
+-            opt.setIndicatorIndent(2);
++opt.setIndicatorIndent(1);
+

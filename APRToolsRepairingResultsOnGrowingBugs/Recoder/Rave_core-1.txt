@@ -1,0 +1,5 @@
+Rave_core1-88-buggy/rave-components/rave-core/src/main/java/org/apache/rave/portal/security/impl/RavePermissionEvaluator.java
+-        return getEvaluator(targetDomainObject.getClass().getName()).hasPermission(authentication, targetDomainObject,
+                getPermission(targetDomainObject, (String) permissionString));
++if((targetDomainObject == null)){
+return false;}

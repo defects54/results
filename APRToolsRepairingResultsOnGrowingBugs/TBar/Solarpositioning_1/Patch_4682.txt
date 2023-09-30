@@ -1,0 +1,17 @@
+diff --git a/src/main/java/net/e175/klaus/solarpositioning/SPA.java b/src/main/java/net/e175/klaus/solarpositioning/SPA.java
+index 8d35e75..4c95424 100644
+--- a/src/main/java/net/e175/klaus/solarpositioning/SPA.java
++++ b/src/main/java/net/e175/klaus/solarpositioning/SPA.java
+@@ -307,9 +307,10 @@ public final class SPA {
+         dayStart.set(Calendar.SECOND, 0);
+         dayStart.set(Calendar.MILLISECOND, 0);
+         dayStart.set(Calendar.HOUR_OF_DAY, 12);
+-        final int offset = day.getTimeZone().getOffset(dayStart.getTimeInMillis());
+-
+         dayStart.set(Calendar.HOUR_OF_DAY, 0);
++	final int offset = day.getTimeZone().getOffset(dayStart.getTimeInMillis());
++
++        
+         final double offsetFraction = (double) offset / MS_PER_DAY;
+         final int addMs = (int) (MS_PER_DAY * limitTo(fraction + offsetFraction, 1.0));
+         assert addMs >= 0 && addMs <= MS_PER_DAY;

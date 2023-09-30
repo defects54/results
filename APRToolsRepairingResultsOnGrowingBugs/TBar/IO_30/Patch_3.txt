@@ -1,0 +1,13 @@
+diff --git a/src/main/java/org/apache/commons/io/FileUtils.java b/src/main/java/org/apache/commons/io/FileUtils.java
+index 97e2671..72d8f2a 100644
+--- a/src/main/java/org/apache/commons/io/FileUtils.java
++++ b/src/main/java/org/apache/commons/io/FileUtils.java
+@@ -1217,7 +1217,7 @@ public static void copyDirectoryToDirectory(final File srcDir, final File destDi
+             throw new NullPointerException("Source must not be null");
+         }
+         if (srcDir.exists() && srcDir.isDirectory() == false) {
+-            throw new IllegalArgumentException("Source '" + destDir + "' is not a directory");
++            throw new IllegalArgumentException("Source '" + srcDir + "' is not a directory");
+         }
+         if (destDir == null) {
+             throw new NullPointerException("Destination must not be null");

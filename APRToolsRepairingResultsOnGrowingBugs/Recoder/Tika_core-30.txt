@@ -1,0 +1,3 @@
+Tika_core30-118-buggy/tika-core/src/main/java/org/apache/tika/sax/SafeContentHandler.java
+-            if (isInvalid(ch[i])) {
++if(isInvalid(c)){

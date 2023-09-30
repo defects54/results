@@ -1,0 +1,3 @@
+Text1-91-buggy/src/main/java/org/apache/commons/text/similarity/JaroWinklerDistance.java
+-        return Math.round(jw * percentageRoundValue) / percentageRoundValue;
++return jw;

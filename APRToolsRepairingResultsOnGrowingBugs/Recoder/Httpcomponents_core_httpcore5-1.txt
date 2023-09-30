@@ -1,0 +1,3 @@
+Httpcomponents_core_httpcore51-209-buggy/httpcore5/src/main/java/org/apache/hc/core5/http/impl/io/DefaultBHttpClientConnection.java
+-            return;
++

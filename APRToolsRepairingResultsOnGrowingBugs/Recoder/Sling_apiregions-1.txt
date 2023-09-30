@@ -1,0 +1,4 @@
+Sling_apiregions1-79-buggy/src/main/java/org/apache/sling/feature/extension/apiregions/analyser/CheckConfigurationApi.java
+-                                    context.reportWarning("Configuration " + entry.getKey() + "." + propEntry.getKey() + " : " + err);
++context.reportError(((("null" + entry.getKey()) + "null") + err));
+

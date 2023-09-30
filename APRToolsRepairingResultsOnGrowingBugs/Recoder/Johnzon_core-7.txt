@@ -1,0 +1,3 @@
+Johnzon_core7-618-buggy/johnzon-core/src/main/java/org/apache/johnzon/core/JsonGeneratorImpl.java
+-            if (!allowInitial || currentState != GeneratorState.INITIAL) {
++if((!allowInitial && (currentState != GeneratorState.INITIAL))){

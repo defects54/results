@@ -1,0 +1,13 @@
+diff --git a/burst/src/main/java/com/squareup/burst/Burst.java b/burst/src/main/java/com/squareup/burst/Burst.java
+index 071ccaf..f75b52e 100644
+--- a/burst/src/main/java/com/squareup/burst/Burst.java
++++ b/burst/src/main/java/com/squareup/burst/Burst.java
+@@ -21,7 +21,7 @@ public final class Burst {
+       return constructors[0];
+     }
+     if (constructors.length == 0) {
+-      constructors = cls.getDeclaredConstructors();
++      
+       if (constructors.length == 1) {
+         Constructor<?> constructor = constructors[0];
+         if (constructor.getParameterCount() == 0) {

@@ -1,0 +1,4 @@
+Sonartsplugin6-28-bugg1/src/main/java/com/pablissimo/sonar/TsLintParserImpl.java
+-            for (TsLintIssue batchIssue : batchIssues) {
++if((batchIssues != null)){
+

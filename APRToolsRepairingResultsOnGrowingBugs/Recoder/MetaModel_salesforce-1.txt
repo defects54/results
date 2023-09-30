@@ -1,0 +1,3 @@
+MetaModel_salesforce1-111-buggy/salesforce/src/main/java/org/apache/metamodel/salesforce/SalesforceDataSet.java
+-                return NumberComparator.toNumber(columnType.isNumber());
++return NumberComparator.toNumber(value);

@@ -1,0 +1,4 @@
+Shiro_core40-90-buggy/core/src/main/java/org/apache/shiro/authz/ModularRealmAuthorizer.java
+-        this.realms = realms;
++applyRolePermissionResolverToRealms();
+

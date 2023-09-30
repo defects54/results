@@ -1,0 +1,4 @@
+IO3-172-bugg2/src/java/org/apache/commons/io/FileUtils.java
+-            if (parent.exists() == false) {
++if((parent != null)){
+

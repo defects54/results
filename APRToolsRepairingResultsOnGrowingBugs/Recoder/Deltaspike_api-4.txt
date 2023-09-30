@@ -1,0 +1,4 @@
+Deltaspike_api4-248-buggy/deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java
+-            configResolverContext.setProjectStageAware(false);            
++configResolverContext.setPropertyAware(false);
+

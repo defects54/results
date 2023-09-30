@@ -1,0 +1,5 @@
+Functor2-74-buggy/src/main/java/org/apache/commons/functor/core/composite/UnarySequence.java
+-                then(p);
++if((p == null)){
+continue;
+}

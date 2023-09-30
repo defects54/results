@@ -1,0 +1,4 @@
+Net26-168-buggy/src/main/java/org/apache/commons/net/util/SubnetUtils.java
+-            long addLong = address & UNSIGNED_INT_MASK;
++if((address == 0)){
+return false;}
